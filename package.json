@@ -1,0 +1,27 @@
+{
+  "name": "nuxt-blog-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "mongoose": "^6.6.2",
+    "nodemon": "^2.0.20"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lawrence-V/blogpost.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lawrence-V/blogpost/issues"
+  },
+  "homepage": "https://github.com/lawrence-V/blogpost#readme"
+}
