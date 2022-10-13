@@ -7,6 +7,18 @@ var blogSchema = mongoose.Schema({
   des: {
     type: String,
   },
+  first_name: {
+    type: String,
+  },
+  middle_name: {
+    type: String,
+  },
+  last_name: {
+    type: String,
+  },
+  age: {
+    type: String,
+  },
   date: {
     type: Date,
     default: Date.now(),

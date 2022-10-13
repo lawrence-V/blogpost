@@ -4,8 +4,8 @@ const app = express()
 // app.use(cors())
 const bodyParser = require('body-parser')
 //enables cors
-app.use(cors({ origin: true }))
-const PORT = 8080
+app.use(cors())
+const PORT = 8000
 
 require('./models/db')
 
