@@ -19,6 +19,13 @@ var blogSchema = mongoose.Schema({
   age: {
     type: String,
   },
+  file: {
+    type: Object,
+    required: true,
+    // type: String,
+    // required: true,
+  },
+
   date: {
     type: Date,
     default: Date.now(),

@@ -1,22 +1,23 @@
 const express = require('express')
 const route = express.Router()
-
+const multer = require('multer')
 const Blog = require('../models/Blog')
 
-route.post('/post', (req, res) => {
-  const { title, des } = req.body
+const upload = multer({
+  dest: './uploads',
+})
 
-  if (!title || !des) {
+route.post('/post', upload.single('file'), (req, res, next) => {
+  const { title, des, file } = req.body
+
+  if (!title || !des || !file) {
     return res.status(400).json({ error: 'All the fields are required' })
   }
 
   const blogPost = Blog({
     title,
     des,
-    // first_name,
-    // middle_name,
-    // last_name,
-    // age,
+    file,
   })
 
   Blog.create(blogPost)
